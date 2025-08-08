@@ -100,7 +100,7 @@ export default function Header({ themeProps }) {
                         <Button
                            color="inherit"
                            className="nav-link"
-                           href="https://chromewebstore.google.com/detail/gridlinks/ofpobifnipafncfehmgeknfkgojkbgke"
+                           href="https://bltcore.com"
                            target="_new"
                            sx={{
                               textTransform: "none",

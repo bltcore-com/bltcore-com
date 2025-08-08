@@ -32,6 +32,7 @@ import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import AppleIcon from "@mui/icons-material/Apple";
+import AddToDriveIcon from '@mui/icons-material/AddToDrive';
 // import InboxIcon from "@mui/icons-material/Inbox";
 // import EventIcon from "@mui/icons-material/Event";
 import AirplaneTicketIcon from "@mui/icons-material/AirplaneTicket";
@@ -126,6 +127,14 @@ export default function IconBar({ themeProps }) {
                sx={iconStyle}
             >
                <AppleIcon />
+            </IconButton>
+            <IconButton
+               title={ls.header.gl}
+               aria-label="google drive"
+               onClick={() => window.open(ls.header.gl)}
+               sx={iconStyle}
+            >
+               <AddToDriveIcon />
             </IconButton>
             {/* <IconButton title={ls.header.ib} aria-label="inbox" onClick={() => window.open(ls.header.ib)} sx={iconStyle}><InboxIcon /></IconButton> */}
             {/* <IconButton title={ls.header.ca} aria-label="event" onClick={() => window.open(ls.header.ca)}sx={iconStyle} ><EventIcon /></IconButton> */}

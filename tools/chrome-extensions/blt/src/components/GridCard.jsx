@@ -16,7 +16,7 @@ export default function GridCard({ dto }) {
       return (
         <Link title={dto.tootip1 ?? dto.href1} href={dto.href1} target={dto.target1 ?? "_blank"} sx={{
          fontSize: "9.5pt",
-         fontWeight: 500,
+            fontWeight: 400,
          color: theme.palette.mode === "dark" ? "lightblue" : "seagreen",
          textDecoration: "none",
          textShadow: "none",

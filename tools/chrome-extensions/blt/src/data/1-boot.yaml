@@ -1,0 +1,66 @@
+name: comms
+title: bootstrap
+href1: " "
+href2: "*/settings"
+links:
+  - pre1: ㅤㅤㅤ
+    post1: ㅤㅤㅤㅤ
+    post2:
+    post3:
+
+    name1: lovable
+    href1: https://lovable.dev/
+
+
+    name3: backpack
+    href3: https://braintrailz.com/backpack
+
+
+
+  - pre1: ㅤ
+    post1: ㅤ
+    post2: ㅤ
+    post3: ㅤ
+
+    name1: zoom
+    href1: https://zoom.us/
+    title1: Zoom Video Communications
+
+    name2: slack
+    href2: https://slack.com/
+    title2: "Slack: Where Work Happens"
+
+    name3: meet
+    href3: https://meet.google.com/
+    title3: "Google Meet: Secure Video Meetings"
+
+    name4: clickup
+    href4: https://app.clickup.com/9014906045/v/s/90143826330
+
+
+  - pre1: ㅤ
+  - name1: -legal
+    href1: https://app.cindysfloridallc.com/v2/home/companies/205663/overview
+
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+  - pre1: ㅤ
+
+skip:
+  - pre1:  
+    post1:  
+    post2:  
+    post3:  
+
+    name1: dev.to
+    href1: https://dev.to/
+
+    name2: quora
+    href2: https://www.quora.com/topic/Software-Engineering
+
+    name3: groups
+    href3: https://www.linkedin.com/groups/
+
+    name4: hacker news
+    href4: https://news.ycombinator.com

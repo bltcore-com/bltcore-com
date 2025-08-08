@@ -18,16 +18,19 @@ export default function Settings({ themeProps }) {
    const { name, ls, darkMode } = themeProps
    const lcolor = darkMode ? "lightblue" : "#1b2051"
 
-   const { gh, li, tw, ig, fb, ic, ib, ca, go, sm, ai, qo } = ls.header
+
+   const { gh, li, tw, ig, fb, ic, gl, ib, ca, go, ba, sm, ai, qo } = ls.header
    const [githubUrl, setGithubUrl] = useState(gh ?? "")
    const [linkedinUrl, setLinkedinUrl] = useState(li ?? "")
    const [twitterUrl, setTwitterUrl] = useState(tw ?? "")
    const [instaUrl, setInstaUrl] = useState(ig ?? "")
    const [facebookUrl, setFacebookUrl] = useState(fb ?? "")
    const [icloudUrl, setIcloudUrl] = useState(ic ?? "")
+   const [googleDriveUrl, setGoogleDriveUrl] = useState(gl ?? "")
    const [inboxUrl, setInboxUrl] = useState(ib ?? "")
    const [calendarUrl, setCalendarUrl] = useState(ca ?? "")
    const [travelUrl, setTravelUrl] = useState(go ?? "")
+   const [bankUrl, setBankUrl] = useState(ba ?? "")
    const [brokerUrl, setBrokerUrl] = useState(sm ?? "")
    const [chataiUrl, setChataiUrl] = useState(ai ?? "")
    const [motdUrl, setMotdUrl] = useState(qo ?? "")
@@ -43,13 +46,16 @@ export default function Settings({ themeProps }) {
       setInstaUrl(ig)
       setFacebookUrl(fb)
       setIcloudUrl(ic)
+      setGoogleDriveUrl(gl)
+      setBankUrl(ba)
       setInboxUrl(ib)
       setCalendarUrl(ca)
       setTravelUrl(go)
+      setBankUrl(ba)
       setBrokerUrl(sm)
       setChataiUrl(ai)
       setMotdUrl(qo)
-   }, [gh, li, tw, ig, fb, ic, ib, ca, go, sm, ai, qo])
+   }, [gh, li, tw, ig, fb, ic, gl, ib, ca, go, ba, sm, ai, qo])
 
    const pagelink = "/settings"
    const navigate = useNavigate()
@@ -96,9 +102,11 @@ export default function Settings({ themeProps }) {
       ls.header.ig = instaUrl
       ls.header.fb = facebookUrl
       ls.header.ic = icloudUrl
+      ls.header.gl = googleDriveUrl
       ls.header.ib = inboxUrl
       ls.header.ca = calendarUrl
       ls.header.go = travelUrl
+      ls.header.ba = bankUrl
       ls.header.sm = brokerUrl
       ls.header.ai = chataiUrl
       ls.header.qo = motdUrl

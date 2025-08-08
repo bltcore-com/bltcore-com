@@ -75,14 +75,15 @@ export default function PwdGen({ themeProps }) {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Password Generator</h1>
+          <h4
+             className={styles.title}>Password Generator</h4>
             <div className={styles['password-box']}>
                 <input
                     type="text"
                     value={password}
                     readOnly
                 />
-                <Button sx={{ backgroundColor: "#0066cc !important", textTransform: "none", padding:0, fontSize: "12pt", fontWeight: 400,}} type="button" variant="contained" size="small" color="primary" onClick={copyToClipboard}>Copy</Button>
+             <Button sx={{ backgroundColor: "#0066cc !important", textTransform: "none", padding: 0, fontSize: "12pt", fontWeight: 400, }} type="button" variant="contained" size="small" color="primary" onClick={copyToClipboard}>Copy</Button>
             </div>
             <div className={styles.options}>
                 <div className={styles['length-control']}>

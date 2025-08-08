@@ -6,39 +6,27 @@ links:
   - pre1:  
     name1: chatgpt
     href1: https://chat.openai.com/
+    title1: OpenAI's ChatGPT
+    name2: claude
+    href2: https://claude.ai/chats
+    title2: Anthropic's Claude
+    name3: gemini
+    href3: https://gemini.google.com/
+    title3: Google's Gemini
+    name4: perplexity
+    href4: https://www.perplexity.ai/
+    title4: Perplexity AI Search
 
-  - pre1:  
-    name1: claude
-    href1: https://claude.ai/chats
-
-  - pre1:  
-    name1: gemini
-    href1: https://gemini.google.com/
-
-
-  - pre1:  
-    name1: perplexity
-    title1: Perplexity AI Search
-
-  - pre1:  
+  - pre1:   
     name1: meta.ai
     href1: https://www.meta.ai/
-
-  - pre1:  
-    name1: x.ai
-    href1: https://x.ai/
-    title1: x.ai
-
-  - pre1:  
-  - pre1:  
-
-
-skip:
-  - pre1:  
-    name1: hugging face
-    href1: https://huggingface.co/
-    title1: Hugging Face AI Community
-
+    title1: Meta's AI Research
+    name3: x.ai
+    href3: https://x.ai/
+    title3: x.ai
+    name2: hugging face
+    href2: https://huggingface.co/
+    title2: Hugging Face AI Community
 
   - name1: "-art/image"
 
@@ -76,3 +64,15 @@ skip:
     name3: sourcegraph
     href3: https://sourcegraph.com/search
 
+  - pre1: "~  lamatic   "
+    post1:   
+    post2:  
+    post3:  
+
+    name1: docs
+    href1: https://lamatic.ai/docs
+
+    name2: studio
+    href2: https://studio.lamatic.ai/
+
+  - pre1: ㅤ
