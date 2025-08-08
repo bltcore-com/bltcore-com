@@ -1,0 +1,319 @@
+name: amzn
+title: amazon
+href1: https://aws.amazon.com/
+href2: "*/settings"
+links:
+  - pre1: ㅤ
+    name1: alexa
+    href1: https://alexa.amazon.com/
+    post1: ✫
+
+    name2: prime
+    href2: https://amazon.com/
+    post2: ✫
+
+    name3: video
+    href3: https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_dvm_us_eg_cs_nav_rec_T1
+    post3: ✫
+
+    name4: music
+    href4: https://music.amazon.com/
+
+  - pre1:     
+    name1: audible
+    href1: https://www.audible.com/
+    title1: "Audible"
+    post1:  | 
+
+    name2: twitch
+    href2: https://www.twitch.tv/
+    title2: "Twitch"
+    post2:  | 
+
+    name3: imdb
+    href3: https://www.imdb.com/
+    title3: "IMDb"
+    post3:  | 
+
+    name4: kindle
+    href4: https://www.amazon.com/kindle-dbs/fd/kcp
+    title4: "Kindle Direct Publishing"
+
+  - name1: ""
+
+  - name1: -     aws    
+    href1: https://aws.amazon.com/
+
+  - name1: console
+    pre1:  
+    href1: https://console.aws.amazon.com/
+    title1: "AWS Management Console"
+    post1:  ✫ 
+
+    name2: cdk
+    href2: https://aws.amazon.com/cdk/
+    post2:  ✫ 
+
+    name3: js-sdk
+    href3: https://aws.amazon.com/sdk-for-javascript/
+    post3:  ✫ 
+
+    name4: amplify
+    href4: https://aws.amazon.com/amplify/
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+break:
+  - name1: cloudformation
+    href1: https://aws.amazon.com/cloudformation/
+    title1: "AWS CloudFormation"
+    name2: elastic beanstalk
+    href2: https://aws.amazon.com/elasticbeanstalk/
+    title2: "AWS Elastic Beanstalk"
+    name3: cloudfront
+    href3: https://aws.amazon.com/cloudfront/
+    title3: "Amazon CloudFront"
+    name4: route 53
+    href4: https://aws.amazon.com/route53/
+    title4: "Amazon Route 53"
+
+  - name1: rds
+    href1: https://aws.amazon.com/rds/
+    title1: "Amazon RDS"
+    name2: dynamodb
+    href2: https://aws.amazon.com/dynamodb/
+    title2: "Amazon DynamoDB"
+    name3: aurora
+    href3: https://aws.amazon.com/rds/aurora/
+    title3: "Amazon Aurora"
+    name4: redshift
+    href4: https://aws.amazon.com/redshift/
+    title4: "Amazon Redshift"
+
+  - name1: eks
+    href1: https://aws.amazon.com/eks/
+    title1: "Amazon EKS"
+    name2: ecs
+    href2: https://aws.amazon.com/ecs/
+    title2: "Amazon ECS"
+    name3: fargate
+    href3: https://aws.amazon.com/fargate/
+    title3: "AWS Fargate"
+    name4: ecr
+    href4: https://aws.amazon.com/ecr/
+    title4: "Amazon ECR"
+
+  - name1: codecommit
+    href1: https://aws.amazon.com/codecommit/
+    title1: "AWS CodeCommit"
+    name2: codebuild
+    href2: https://aws.amazon.com/codebuild/
+    title2: "AWS CodeBuild"
+    name3: codepipeline
+    href3: https://aws.amazon.com/codepipeline/
+    title3: "AWS CodePipeline"
+    name4: codestar
+    href4: https://aws.amazon.com/codestar/
+    title4: "AWS CodeStar"
+
+  - name1: sagemaker
+    href1: https://aws.amazon.com/sagemaker/
+    title1: "Amazon SageMaker"
+    name2: comprehend
+    href2: https://aws.amazon.com/comprehend/
+    title2: "Amazon Comprehend"
+    name3: rekognition
+    href3: https://aws.amazon.com/rekognition/
+    title3: "Amazon Rekognition"
+    name4: lex
+    href4: https://aws.amazon.com/lex/
+    title4: "Amazon Lex"
+
+  - name1: cloudwatch
+    href1: https://aws.amazon.com/cloudwatch/
+    title1: "Amazon CloudWatch"
+    name2: x-ray
+    href2: https://aws.amazon.com/xray/
+    title2: "AWS X-Ray"
+    name3: cloudtrail
+    href3: https://aws.amazon.com/cloudtrail/
+    title3: "AWS CloudTrail"
+    name4: systems manager
+    href4: https://aws.amazon.com/systems-manager/
+    title4: "AWS Systems Manager"
+
+  - name1: iam
+    href1: https://aws.amazon.com/iam/
+    title1: "AWS Identity and Access Management (IAM)"
+    name2: cognito
+    href2: https://aws.amazon.com/cognito/
+    title2: "Amazon Cognito"
+    name3: kms
+    href3: https://aws.amazon.com/kms/
+    title3: "AWS Key Management Service (KMS)"
+    name4: secrets manager
+    href4: https://aws.amazon.com/secrets-manager/
+    title4: "AWS Secrets Manager"
+
+blinks:
+  - name1: console
+    href1: https://console.aws.amazon.com/
+    title1: "AWS Management Console"
+    name2: ec2
+    href2: https://aws.amazon.com/ec2/
+    title2: "Amazon EC2"
+    name3: s3
+    href3: https://aws.amazon.com/s3/
+    title3: "Amazon S3"
+    name4: lambda
+    href4: https://aws.amazon.com/lambda/
+    title4: "AWS Lambda"
+
+  - name1: cloudfront
+    href1: https://aws.amazon.com/cloudfront/
+    title1: "Amazon CloudFront"
+    name2: rds
+    href2: https://aws.amazon.com/rds/
+    title2: "Amazon RDS"
+    name3: dynamodb
+    href3: https://aws.amazon.com/dynamodb/
+    title3: "Amazon DynamoDB"
+    name4: sqs
+    href4: https://aws.amazon.com/sqs/
+    title4: "Amazon SQS"
+
+  - name1: eks
+    href1: https://aws.amazon.com/eks/
+    title1: "Amazon EKS"
+    name2: ecs
+    href2: https://aws.amazon.com/ecs/
+    title2: "Amazon ECS"
+    name3: fargate
+    href3: https://aws.amazon.com/fargate/
+    title3: "AWS Fargate"
+    name4: beanstalk
+    href4: https://aws.amazon.com/elasticbeanstalk/
+    title4: "AWS Elastic Beanstalk"
+
+  - name1: sagemaker
+    href1: https://aws.amazon.com/sagemaker/
+    title1: "Amazon SageMaker"
+    name2: comprehend
+    href2: https://aws.amazon.com/comprehend/
+    title2: "Amazon Comprehend"
+    name3: rekognition
+    href3: https://aws.amazon.com/rekognition/
+    title3: "Amazon Rekognition"
+    name4: polly
+    href4: https://aws.amazon.com/polly/
+    title4: "Amazon Polly"
+
+  - name1: kindle
+    href1: https://www.amazon.com/kindle-dbs/fd/kcp
+    title1: "Kindle Direct Publishing"
+    name2: audible
+    href2: https://www.audible.com/
+    title2: "Audible"
+    name3: twitch
+    href3: https://www.twitch.tv/
+    title3: "Twitch"
+    name4: imdb
+    href4: https://www.imdb.com/
+    title4: "IMDb"
+
+  - name1: aws marketplace
+    href1: https://aws.amazon.com/marketplace
+    title1: "AWS Marketplace"
+    name2: seller central
+    href2: https://sellercentral.amazon.com/
+    title2: "Amazon Seller Central"
+    name3: associates
+    href3: https://affiliate-program.amazon.com/
+    title3: "Amazon Associates"
+    name4: mechanical turk
+    href4: https://www.mturk.com/
+    title4: "Amazon Mechanical Turk"
+
+  - name1: aws documentation
+    href1: https://docs.aws.amazon.com/
+    title1: "AWS Documentation"
+    name2: aws training
+    href2: https://aws.amazon.com/training/
+    title2: "AWS Training and Certification"
+    name3: aws blog
+    href3: https://aws.amazon.com/blogs/
+    title3: "AWS Blog"
+    name4: aws support
+    href4: https://aws.amazon.com/premiumsupport/
+    title4: "AWS Support"
+
+  - name1: AWS re:Invent
+    href1: https://reinvent.awsevents.com/
+    title1: "AWS re:Invent Conference"
+    name2: Amazon Developer Portal
+    href2: https://developer.amazon.com/
+    title2: "Amazon Developer Portal"
+
+  - name1: AWS Amplify
+    href1: https://aws.amazon.com/amplify/
+    title1: "AWS Amplify"
+    name2: Amazon GameLift
+    href2: https://aws.amazon.com/gamelift/
+    title2: "Amazon GameLift"
+
+  - name1: Amazon Elastic Transcoder
+    href1: https://aws.amazon.com/elastictranscoder/
+    title1: "Amazon Elastic Transcoder"
+    name2: AWS IoT
+    href2: https://aws.amazon.com/iot/
+    title2: "AWS IoT"
+
+  - name1: Amazon Lightsail
+    href1: https://aws.amazon.com/lightsail/
+    title1: "Amazon Lightsail"
+    name2: AWS Ground Station
+    href2: https://aws.amazon.com/ground-station/
+    title2: "AWS Ground Station"
+
+  - name1: Amazon Cognito
+    href1: https://aws.amazon.com/cognito/
+    title1: "Amazon Cognito"
+    name2: AWS CloudFormation
+    href2: https://aws.amazon.com/cloudformation/
+    title2: "AWS CloudFormation"
+
+  - pre1: ㅤ
+    name1: aws
+    href1: https://aws.amazon.com/
+    title1: "Amazon Web Services"
+
+  - pre1: learn:"
+
+    name1: amazon
+    href1: https://aws.amazon.com/developer/
+
+    name2: aws
+    href2: https://developer.amazon.com/
+
+  - pre1: ㅤ
+
+  - pre1: ㅤ
+    name1: aws
+    pre2: ㅤ
+    name2: prime
+    href2: https://www.amazon.com/prime
+    title2: "Amazon Prime"
+    pre3: ㅤ
+    name3: alexa
+    href3: https://developer.amazon.com/alexa
+    title3: "Alexa Developer Portal"
+    pre4: ㅤ
+    name4: business
+    href4: https://www.amazon.com/business
+    title4: "Amazon Business"

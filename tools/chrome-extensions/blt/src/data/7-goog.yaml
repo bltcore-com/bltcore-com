@@ -1,0 +1,124 @@
+name: goog
+title: google
+href1: https://developers.google.com/
+href2: "*/settings"
+links:
+  - pre1: ㅤ
+    name1: cloud console
+    href1: https://console.cloud.google.com/
+    title1: "Google Cloud Console"
+    name2: compute engine
+    href2: https://cloud.google.com/compute
+    title2: "Google Compute Engine"
+    name3: app engine
+    href3: https://cloud.google.com/appengine
+    title3: "Google App Engine"
+    name4: cloud functions
+    href4: https://cloud.google.com/functions
+    title4: "Google Cloud Functions"
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+  - name1: ㅤ
+
+break:
+  - name1: kubernetes engine
+    href1: https://cloud.google.com/kubernetes-engine
+    title1: "Google Kubernetes Engine"
+    name2: cloud run
+    href2: https://cloud.google.com/run
+    title2: "Google Cloud Run"
+    name3: cloud storage
+    href3: https://cloud.google.com/storage
+    title3: "Google Cloud Storage"
+    name4: cloud sql
+    href4: https://cloud.google.com/sql
+    title4: "Google Cloud SQL"
+
+  - name1: bigquery
+    href1: https://cloud.google.com/bigquery
+    title1: "Google BigQuery"
+    name2: cloud spanner
+    href2: https://cloud.google.com/spanner
+    title2: "Google Cloud Spanner"
+    name3: firestore
+    href3: https://cloud.google.com/firestore
+    title3: "Google Cloud Firestore"
+    name4: datastore
+    href4: https://cloud.google.com/datastore
+    title4: "Google Cloud Datastore"
+
+  - name1: cloud build
+    href1: https://cloud.google.com/build
+    title1: "Google Cloud Build"
+    name2: cloud source repos
+    href2: https://cloud.google.com/source-repositories
+    title2: "Google Cloud Source Repositories"
+    name3: container registry
+    href3: https://cloud.google.com/container-registry
+    title3: "Google Container Registry"
+    name4: artifact registry
+    href4: https://cloud.google.com/artifact-registry
+    title4: "Google Artifact Registry"
+
+  - name1: ai platform
+    href1: https://cloud.google.com/ai-platform
+    title1: "Google AI Platform"
+    name2: vision ai
+    href2: https://cloud.google.com/vision
+    title2: "Google Cloud Vision AI"
+    name3: speech-to-text
+    href3: https://cloud.google.com/speech-to-text
+    title3: "Google Cloud Speech-to-Text"
+    name4: natural language
+    href4: https://cloud.google.com/natural-language
+    title4: "Google Cloud Natural Language"
+
+  - name1: cloud monitoring
+    href1: https://cloud.google.com/monitoring
+    title1: "Google Cloud Monitoring"
+    name2: cloud logging
+    href2: https://cloud.google.com/logging
+    title2: "Google Cloud Logging"
+    name3: cloud trace
+    href3: https://cloud.google.com/trace
+    title3: "Google Cloud Trace"
+    name4: cloud debugger
+    href4: https://cloud.google.com/debugger
+    title4: "Google Cloud Debugger"
+
+  - name1: firebase
+    href1: https://firebase.google.com/
+    title1: "Firebase"
+    name2: cloud identity
+    href2: https://cloud.google.com/identity
+    title2: "Google Cloud Identity"
+    name3: cloud iam
+    href3: https://cloud.google.com/iam
+    title3: "Google Cloud IAM"
+    name4: cloud kms
+    href4: https://cloud.google.com/kms
+    title4: "Google Cloud Key Management Service"
+
+  - name1: android studio
+    href1: https://developer.android.com/studio
+    title1: "Android Studio"
+    name2: flutter
+    href2: https://flutter.dev/
+    title2: "Flutter"
+    name3: tensorflow
+    href3: https://www.tensorflow.org/
+    title3: "TensorFlow"
+    name4: cloud sdk
+    href4: https://cloud.google.com/sdk
+    title4: "Google Cloud SDK"

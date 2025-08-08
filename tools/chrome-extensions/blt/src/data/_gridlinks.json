@@ -1,0 +1,94 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "properties": {
+      "name:": {
+         "type": "string"
+      },
+      "title": {
+         "type": "string"
+      },
+      "href1": {
+         "type": "string"
+      },
+      "href2": {
+         "type": "string"
+      },
+      "links": {
+         "type": "array",
+         "items": [
+            {
+               "type": "object",
+               "properties": {
+                  "label": {
+                     "type": "string"
+                  },
+                  "pre1": {
+                     "type": "string"
+                  },
+                  "name1": {
+                     "type": "string"
+                  },
+                  "href1": {
+                     "type": "string"
+                  },
+                  "title1": {
+                     "type": "string"
+                  },
+                  "post1": {
+                     "type": "string"
+                  },
+                  "pre2": {
+                     "type": "string"
+                  },
+                  "name2": {
+                     "type": "string"
+                  },
+                  "href2": {
+                     "type": "string"
+                  },
+                  "title2": {
+                     "type": "string"
+                  },
+                  "post2": {
+                     "type": "string"
+                  },
+                  "pre3": {
+                     "type": "string"
+                  },
+                  "name3": {
+                     "type": "string"
+                  },
+                  "href3": {
+                     "type": "string"
+                  },
+                  "title3": {
+                     "type": "string"
+                  },
+                  "post3": {
+                     "type": "string"
+                  },
+                  "pre4": {
+                     "type": "string"
+                  },
+                  "name4": {
+                     "type": "string"
+                  },
+                  "href4": {
+                     "type": "string"
+                  },
+                  "title4": {
+                     "type": "string"
+                  },
+                  "post4": {
+                     "type": "string"
+                  }
+               }
+            }
+         ],
+         "minItems": 8,
+         "maxItems": 8
+      }
+   },
+   "required": ["title1", "href1", "href2", "links"]
+}

@@ -1,0 +1,83 @@
+name: cloud
+title: cloud
+href1: https://www.cloudzero.com/blog/cloud-service-providers/
+href2: "*/settings"
+links:
+  - pre1: ㅤ 
+    post1: ㅤㅤ
+    post2: ㅤㅤ
+    post3: ㅤㅤ
+
+    name1: aws
+    href1: https://console.aws.amazon.com/
+
+    name2: azure
+    href2: https://portal.azure.com/#home
+
+    name3: gcp
+    href3: https://console.cloud.google.com/
+
+    name4: do
+    href4: https://cloud.digitalocean.com/login
+
+  - pre1: ㅤ
+
+  - pre1: ㅤ 
+    post1: ㅤㅤ
+    post2: ㅤㅤ
+    post3: ㅤㅤ
+
+    name1: "-research"
+
+  - pre1: ㅤ 
+    post1: "|"
+    post2: ㅤㅤ
+
+
+    name1: rancher
+    href1: http://localhost
+
+    name2: docs
+    href2: https://rancher.com/docs/
+
+    name3: k8s-gridsvcs
+    href3: https://localhost/dashboard/c/local/explorer/namespace/gridsvcs#Resources
+
+  - pre1:    
+    post1: "|"
+    post2:   
+    post3: "|"
+
+    name1: fusionauth
+    href1: http://localhost:9011/
+
+    name2: docs
+    href2: https://fusionauth.io/docs/
+
+    name3: supabase
+    href3: https://supabase.com/dashboard/projects
+
+    name4: docs
+    href4: https://supabase.com/docs
+
+  - pre1: ㅤ
+
+  - pre1:    
+    post1:   
+    post2:   
+    post3:  
+
+    name1: passportjs
+    href1: https://www.passportjs.org/
+
+    name2: cloudflare
+    href2: https://developers.cloudflare.com/products/
+
+  - pre1:    
+  - pre1:    
+
+
+
+
+
+
