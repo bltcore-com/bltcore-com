@@ -1,9 +1,9 @@
 {
    "manifest_version": 3,
-   "name": "bltxcore",
+   "name": "bltcore",
    "description": "bltcore",
    "homepage_url": "https://bltcore.com",
-   "version": "0.0.2",
+   "version": "0.0.1",
    "permissions": [
       "activeTab",
       "scripting"
