@@ -16,7 +16,7 @@ import axios from "axios"
  */
 export default function Settings({ themeProps }) {
    const { name, ls, darkMode } = themeProps
-   const lcolor = darkMode ? "lightblue" : "#1b2051"
+   const lcolor = darkMode ? "rgb(76,249,77)" : "#1b2051"
 
 
    const { gh, li, tw, ig, fb, ic, gl, ib, ca, go, ba, sm, ai, qo } = ls.header

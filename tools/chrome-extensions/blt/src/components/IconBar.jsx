@@ -62,7 +62,7 @@ export default function IconBar({ themeProps }) {
 
    // Icon styling based on dark mode
    const iconStyle = {
-      color: darkMode ? "hsl(0 0% 100%)" : "hsl(221 83% 13%)",
+      color: "hsl(221 83% 13%)",
       "&:hover": {
          color: "hsl(24 95% 53%)", // Orange accent color on hover
       },

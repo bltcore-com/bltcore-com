@@ -5,23 +5,31 @@ href2: "*/settings"
 links:
 
   - pre1:          
-    name1: rates
-    href1: https://bltcore.com/rates
+    name1: core
+    href1: https://bltcore.com
     post1:    
 
-    name2: audit
-    href2: https://bltcore.com/audit
+    name2: rates
+    href2: https://bltcore.com/rates
     post2:    
 
-    name3: close
-    href3: https://bltcore.com/close
+    name3: audit
+    href3: https://bltcore.com/audit
     post3:    
 
-    name4: pos
-    href4: https://demo.bltcore
-
+    name4: close
+    href4: https://bltcore.com/close
+    post4:    
 
   - pre1: ㅤ
+
+  - pre1: ㅤ
+    name1: pos demo
+    href1: https://demo.bltcore.com
+
+    name4: pos
+    href4: https://demo.bltcore.com
+
   - pre1: ㅤ
 
   - name1: -partners
@@ -36,4 +44,5 @@ links:
 
   - pre1: ㅤ
   - pre1: ㅤ
-  - pre1: ㅤ
+
+

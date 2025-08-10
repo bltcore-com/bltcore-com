@@ -1,0 +1,50 @@
+name: services
+title: services
+href1: ""
+href2: "*/settings"
+links:
+  - name1: digital ocean
+    href1: https://cloud.digitalocean.com/login
+
+    pre2:  
+    name2: godaddy
+    href2: https://www.godaddy.com/
+
+    name3: formspree
+    href3: https://formspree.io/forms/xdkgygkq/overview
+
+
+  - pre1:    
+
+  - pre1: "~supabase"
+
+  - pre1: "       pos:            "
+    post1: "  |  "
+
+    name1: demo
+    href1: https://supabase.com/dashboard/project/dxanewewxwxsapiwxazt
+
+    name2: dev
+    href2: https://supabase.com/dashboard/project/ovpmvfheekvipqipsogk
+
+  - pre1: ""
+
+  - pre1: "~lovable"
+
+  - pre1:    
+    name1: dashboard
+    href1: https://lovable.dev/
+    post1:      
+
+    name2: website
+    href2: https://lovable.dev/projects/5e6387a8-b33f-402b-b594-41a36d0606d4
+    post2:      
+
+    name3: pos
+    href3: https://supabase.com/dashboard/org/hxuvuzspbcigvtxjqcpe
+
+  - pre1:    
+  - pre1:    
+  - pre1:    
+  - pre1:    
+  - pre1:    

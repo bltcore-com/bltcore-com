@@ -60,11 +60,11 @@ export default function Header({ themeProps }) {
             <AppBar
                position="static"
                sx={{
-                  backgroundColor: darkMode ? "hsl(221 83% 13%)" : "hsl(0 0% 100%)",
+                  backgroundColor: "#edf0f6",
                   borderBottom: "1px solid",
                   borderColor: darkMode ? "hsl(217.2 32.6% 17.5%)" : "hsl(220 13% 91%)",
                   boxShadow: "none",
-                  color: darkMode ? "hsl(0 0% 100%)" : "hsl(221 83% 13%)",
+                  color: "hsl(221 83% 13%)",
                   "& .imglogo": { width: "42px", height: "42px" },
                }}
             >
@@ -92,7 +92,7 @@ export default function Header({ themeProps }) {
                            className="imglogo"
                            alt="BLT Logo"
                            style={{
-                              filter: darkMode ? "brightness(0) invert(1)" : "none"
+                              filter: "none"
                            }}
                         />
                      </Button>
@@ -105,7 +105,7 @@ export default function Header({ themeProps }) {
                            sx={{
                               textTransform: "none",
                               textShadow: "none",
-                              color: darkMode ? "hsl(0 0% 100%)" : "hsl(221 83% 13%)",
+                              color: "hsl(221 83% 13%)",
                               fontWeight: 400,
                               "&:hover": {
                                  color: darkMode ? "hsl(24 95% 53%)" : "hsl(24 95% 53%)"
@@ -121,12 +121,12 @@ export default function Header({ themeProps }) {
                   <Box>
                      <Button
                         color="inherit"
-                        href="https://chromewebstore.google.com/detail/gridlinks/ofpobifnipafncfehmgeknfkgojkbgke"
+                        href="https://chromewebstore.google.com/detail/bltcore/eklchbpcdgjhlknmnkdjogefejfaoakn"
                         target="_new"
                         sx={{
                            textTransform: "none",
                            textShadow: "none",
-                           color: darkMode ? "hsl(0 0% 100%)" : "hsl(221 83% 13%)",
+                           color: "hsl(221 83% 13%)",
                            fontWeight: 400,
                            "&:hover": {
                               color: darkMode ? "hsl(24 95% 53%)" : "hsl(24 95% 53%)"

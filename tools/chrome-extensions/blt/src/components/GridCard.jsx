@@ -17,7 +17,7 @@ export default function GridCard({ dto }) {
         <Link title={dto.tootip1 ?? dto.href1} href={dto.href1} target={dto.target1 ?? "_blank"} sx={{
          fontSize: "9.5pt",
             fontWeight: 400,
-         color: theme.palette.mode === "dark" ? "lightblue" : "seagreen",
+            color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "seagreen",
          textDecoration: "none",
          textShadow: "none",
          "&:hover": {
@@ -36,7 +36,7 @@ export default function GridCard({ dto }) {
     const getSubTitle = () => {
       const subtitle = dto.title2 ?? " ⛭ "
       const style = {
-         color: theme.palette.mode === "dark" ? "lightblue" : "seagreen",
+         color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "seagreen",
          float: "right",
          minWidth: "12px",
          fontSize: "9.5pt",

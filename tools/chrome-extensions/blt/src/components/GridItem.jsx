@@ -1,13 +1,13 @@
 import PropTypes from "prop-types"
 import { useTheme } from "@mui/material/styles"
-import { Link, Divider,Stack,Tooltip } from "@mui/material"
+import { Link, Divider, Stack, Tooltip, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from "@mui/material"
 import { styled } from '@mui/material/styles'
 
 const Div = styled('div')(({ theme }) => ({
   ...theme.typography.button,
   textTransform: 'none',
   marginTop: "-1px",
-  color: theme.palette.mode === "dark" ? "lightblue" : "#1b2051",
+   color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "#1b2051",
   fontSize: "8pt",
 }))
 
@@ -23,19 +23,101 @@ export default function CardItem({ dto }) {
       textShadow: "none",
       textTransform: "none",
       fontFamily: "mukta",
-      fontSize: "8.5pt",
+      fontSize: "9pt",
       fontWeight: 500,
       color: theme.palette.mode === "dark" ? "white" : dto.basecolor,
       "&:hover": {
-         color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "white",
+         color: theme.palette.mode === "dark" ? "rgb(76, 249, 77)" : "white",
          backgroundColor: theme.palette.mode === "dark" ? "rgba(128,128,128,0.5)" : "green",
          textDecoration: "none",
          cursor: "hand",
       }
    }
    const blink2 = {
-      color: theme.palette.mode === "dark" ? "lightblue" : "green",
+      color: theme.palette.mode === "dark" ? "rgb(76, 249, 77)1" : "green",
       marginTop: "0px"
+   }
+
+   const renderTable = () => {
+      if (!itHas(dto, "links") || dto.showas !== "table") {
+         return null
+      }
+
+      const tableStyle = {
+         fontSize: "9pt",
+         fontFamily: "mukta",
+         fontWeight: 500,
+         color: theme.palette.mode === "dark" ? "white" : dto.basecolor,
+      }
+
+      const cellStyle = {
+         padding: "2px 4px",
+         border: "none",
+         textAlign: "center",
+         ...tableStyle
+      }
+
+      return (
+         <TableContainer component={Paper} sx={{ boxShadow: "none", backgroundColor: "transparent" }}>
+            <Table size="small" sx={{ borderCollapse: "collapse" }}>
+               <TableBody>
+                  {dto.links.map((row, rowIdx) => {
+                     // Check if row has any content
+                     const hasContent = [1, 2, 3, 4].some(colNum => {
+                        const nameKey = `name${colNum}`
+                        return itHas(row, nameKey) && row[nameKey] && row[nameKey].trim() !== ""
+                     })
+
+                     // If row is empty, render as empty div
+                     if (!hasContent) {
+                        return <div key={rowIdx} style={{ height: "8px" }} />
+                     }
+
+                     return (
+                        <TableRow key={rowIdx} sx={{ border: "none" }}>
+                           {[1, 2, 3, 4].map((colNum) => {
+                              const nameKey = `name${colNum}`
+                              const hrefKey = `href${colNum}`
+                              const titleKey = `title${colNum}`
+                              const targetKey = `target${colNum}`
+
+                              if (!itHas(row, nameKey) || !row[nameKey] || row[nameKey].trim() === "") {
+                                 return <TableCell key={colNum} sx={cellStyle}></TableCell>
+                              }
+
+                              const isLink = itHas(row, hrefKey) && row[hrefKey]
+                              const content = row[nameKey]
+
+                              return (
+                                 <TableCell key={colNum} sx={cellStyle}>
+                                    {isLink ? (
+                                       <Tooltip title={row[titleKey] ?? row[hrefKey]} arrow>
+                                          <Link
+                                             sx={{
+                                                ...blink,
+                                                padding: "2px",
+                                                textDecoration: "none",
+                                                color: "inherit"
+                                             }}
+                                             href={row[hrefKey]}
+                                             target={row[targetKey] ?? "_blank"}
+                                          >
+                                             {content}
+                                          </Link>
+                                       </Tooltip>
+                                    ) : (
+                                       content
+                                    )}
+                                 </TableCell>
+                              )
+                           })}
+                        </TableRow>
+                     )
+                  })}
+               </TableBody>
+            </Table>
+         </TableContainer>
+      )
    }
 
  const showRows = (o, idx) => {
@@ -93,7 +175,7 @@ export default function CardItem({ dto }) {
 }
    return (
    <>
-   {itHas(dto,"links") && dto.links.map((o,idx) => ( showRows(o,idx)))}
+         {dto.showas === "table" ? renderTable() : itHas(dto, "links") && dto.links.map((o, idx) => (showRows(o, idx)))}
    </>
    )
 }
