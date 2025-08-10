@@ -1,6 +1,6 @@
 # bltcore
 
-Chamges for version 0.0.2
+Changes for version 0.0.2
 - add showas table as a mode for display
 - make header and elements blt colored #edf0f6
 - Fixed demo link
