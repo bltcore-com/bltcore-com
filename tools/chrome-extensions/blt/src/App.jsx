@@ -2,14 +2,13 @@
  * Imports the `useState` and `useEffect` hooks from the React library.
  * These hooks are commonly used for managing state and handling side effects in functional components.
  */
-import { useState, useEffect } from "react"
+import { useState, useEffect, Component } from "react"
 
 /**
- * Imports the `BrowserRouter`, `Route`, and `Routes` components from the `react-router-dom` library.
- * These components are used to set up client-side routing in a React application, allowing for navigation
- * between different pages or views without a full page refresh.
+ * Imports the `HashRouter`, `Route`, and `Routes` components from the `react-router-dom` library.
+ * HashRouter is used instead of BrowserRouter for Chrome extensions as it works better in the extension context.
  */
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 
 /**
  * Imports the `createTheme`, `ThemeProvider`, and `CssBaseline` components from the `@mui/material` library.
@@ -116,21 +115,53 @@ export default function App() {
       palette: { mode: darkMode ? "dark" : "light" }
    })
 
-   return (
-      <BrowserRouter>
-         <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <Header themeProps={themeProps} />
-            <Routes>
-               <Route path="/" element={<Home themeProps={themeProps} />} />
-               <Route path="/pwdgen" element={<PwdGen themeProps={themeProps} />} />
-               <Route path="/settings" element={<Settings themeProps={themeProps} />} />
-               {/* <Route path="/login" element={<Login theme={theme} themeProps={themeProps} />} /> */}
+   // Error Boundary Component
+   class ErrorBoundary extends Component {
+      constructor(props) {
+         super(props)
+         this.state = { hasError: false, error: null }
+      }
 
-               {/* This is a catch-all route */}
-               <Route path="*" element={<Home themeProps={themeProps} />} />
-            </Routes>
-         </ThemeProvider>
-      </BrowserRouter>
+      static getDerivedStateFromError(error) {
+         return { hasError: true, error }
+      }
+
+      componentDidCatch(error, errorInfo) {
+         console.error("React Error Boundary caught an error:", error, errorInfo)
+      }
+
+      render() {
+         if (this.state.hasError) {
+            return (
+               <div style={{ padding: "20px", color: "red", backgroundColor: "white" }}>
+                  <h3>Something went wrong.</h3>
+                  <p>Error: {this.state.error?.message}</p>
+                  <button type="button" onClick={() => window.location.reload()}>Reload Extension</button>
+               </div>
+            )
+         }
+
+         return this.props.children
+      }
+   }
+
+   return (
+      <ErrorBoundary>
+         <HashRouter>
+            <ThemeProvider theme={theme}>
+               <CssBaseline />
+               <Header themeProps={themeProps} />
+               <Routes>
+                  <Route path="/" element={<Home themeProps={themeProps} />} />
+                  <Route path="/pwdgen" element={<PwdGen themeProps={themeProps} />} />
+                  <Route path="/settings" element={<Settings themeProps={themeProps} />} />
+                  {/* <Route path="/login" element={<Login theme={theme} themeProps={themeProps} />} /> */}
+
+                  {/* This is a catch-all route */}
+                  <Route path="*" element={<Home themeProps={themeProps} />} />
+               </Routes>
+            </ThemeProvider>
+         </HashRouter>
+      </ErrorBoundary>
    )
 }

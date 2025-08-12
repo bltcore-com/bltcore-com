@@ -23,12 +23,17 @@ links:
 
   - pre1: ㅤ
 
-  - pre1: ㅤ
-    name1: pos demo
-    href1: https://demo.bltcore.com
+  - pre1: "~pos"
 
-    name4: pos
-    href4: https://demo.bltcore.com
+  - pre1: ㅤㅤ
+    name1: demo
+    href1: https://demo.bltcore.com
+    pre2: ㅤ
+    name2: stage
+    href2: https://stage.bltcore.com
+    pre3: ㅤ
+    name3: dev
+    href3: https://localhost:8080
 
   - pre1: ㅤ
 
