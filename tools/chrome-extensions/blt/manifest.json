@@ -3,7 +3,7 @@
    "name": "bltcore",
    "description": "bltcore",
    "homepage_url": "https://bltcore.com",
-   "version": "0.0.4",
+   "version": "0.0.5",
    "permissions": [
       "activeTab",
       "scripting"

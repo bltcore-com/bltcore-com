@@ -1,8 +1,9 @@
 # bltcore
 
+Changes for version 0.0.5
+
 Changes for version 0.0.4
 - removed XMLHttpRequest (via axios) causing error uneeded
-
 
 Changes for version 0.0.3
 - fixed a few links
