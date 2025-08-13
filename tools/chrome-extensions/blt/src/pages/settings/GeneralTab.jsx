@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useState, useEffect } from "react"
-import axios from "axios"
+// import axios from "axios"
 import { Box } from "@mui/material"
 import { Table, Tr, Td } from "./StyledComponents"
 import { Switch } from "@mui/material"
@@ -16,12 +16,12 @@ export function GeneralTab({ lcolor, themeProps }) {
 
    const [topicList, setTopicList] = useState([])
 
-   useEffect(() => {
-      axios.get(ls.header.qo + '/topics/')
-      .then(response => {setTopicList(response.data.map(item => item.topic))})
-      .catch(error => { console.error('Error fetching topics:', error)})
-      .finally(() => { setTopicData(ls.td ?? "general") })
-   }, [ls.header.qo, ls.td])//, setTopicData])
+   // useEffect(() => {
+   //    axios.get(ls.header.qo + '/topics/')
+   //    .then(response => {setTopicList(response.data.map(item => item.topic))})
+   //    .catch(error => { console.error('Error fetching topics:', error)})
+   //    .finally(() => { setTopicData(ls.td ?? "general") })
+   // }, [ls.header.qo, ls.td])//, setTopicData])
 
    const toggleDarkMode = () => {
       ls.dm = !darkMode

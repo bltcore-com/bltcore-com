@@ -5,7 +5,7 @@ import { Box } from "@mui/material"
 import { SettingsHeader, SettingsFooter } from "./SettingsSubcomponents"
 import { GeneralTab } from "./GeneralTab"
 import { LinksTab } from "./LinksTab"
-import axios from "axios"
+// import axios from "axios"
 
 
 /**
@@ -83,18 +83,18 @@ export default function Settings({ themeProps }) {
 
    const handleUpdate = async () => {
 
-      const quotes = async () => {
-         try {
-            const response = await axios.get(ls.header.qo + '/quotes?topic='+ls.td)
-            ls.quotes = response.data
-         } catch (error) {
-            console.error('Error fetching quotes:', error)
-            delete ls.quotes
-         }
-      }
+      // const quotes = async () => {
+      //    try {
+      //       const response = await axios.get(ls.header.qo + '/quotes?topic='+ls.td)
+      //       ls.quotes = response.data
+      //    } catch (error) {
+      //       console.error('Error fetching quotes:', error)
+      //       delete ls.quotes
+      //    }
+      // }
 
-      if(ls.ts) await quotes()
-      else delete ls.quotes
+      // if(ls.ts) await quotes()
+      // else delete ls.quotes
 
       ls.header.gh = githubUrl
       ls.header.li = linkedinUrl

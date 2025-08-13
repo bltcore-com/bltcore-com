@@ -1,6 +1,10 @@
 # bltcore
 
-changes for version 0.0.3
+Changes for version 0.0.4
+- removed XMLHttpRequest (via axios) causing error uneeded
+
+
+Changes for version 0.0.3
 - fixed a few links
 - fixed svg logo
 - add content security policy in manifest
