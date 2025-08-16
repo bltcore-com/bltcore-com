@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import { useEffect, useState } from "react"
 import { useTheme } from "@mui/material/styles"
 import { Link, Divider, Stack, Tooltip, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from "@mui/material"
 import { styled } from '@mui/material/styles'
@@ -16,6 +17,104 @@ CardItem.propTypes = {  dto: PropTypes.object  }
 export default function CardItem({ dto }) {
    const theme = useTheme()
    const itHas = (o,k) => Object.prototype.hasOwnProperty.call(o, k)
+
+   const extractUrlFromPre = (value) => {
+      if (!value || typeof value !== "string") return null
+      const trimmed = value.trim()
+      const match = trimmed.match(/^\(\s*(https?:\/\/[^)]+?)\s*\)$/)
+      return match ? match[1] : null
+   }
+
+   // Heuristic removed; we optimistically render <img> and only fetch after an error
+
+   const RemoteContent = ({ url }) => {
+      const [text, setText] = useState("")
+      const [isText, setIsText] = useState(false)
+      const [hideImg, setHideImg] = useState(false)
+      const [blobUrl, setBlobUrl] = useState(null)
+      // Removed unused showImageByExt; rely on <img> onError to decide when to fetch
+
+      useEffect(() => {
+         let isMounted = true
+         let revokeUrl = null
+         if (!url) return () => { }
+         // Only attempt fetch when image load has failed. This avoids cross-origin fetches for
+         // image URLs (e.g., favicon services without file extensions) and prevents CORS errors.
+         if (!hideImg) return () => { }
+            ; (async () => {
+               try {
+                  const res = await fetch(url)
+                  const contentType = res.headers.get("content-type") || ""
+                  if (contentType.startsWith("image/")) {
+                     const blob = await res.blob()
+                     if (!isMounted) return
+                     const localUrl = URL.createObjectURL(blob)
+                     revokeUrl = localUrl
+                     setBlobUrl(localUrl)
+                     return
+                  }
+                  const looksText = contentType.includes("text/") || contentType.includes("json")
+                  const body = looksText ? await res.text() : ""
+                  if (!isMounted) return
+                  if (looksText) {
+                     setIsText(true)
+                     setText(body)
+                  }
+               } catch (_) {
+                  // ignore
+               }
+            })()
+         return () => {
+            isMounted = false
+            if (revokeUrl) {
+               URL.revokeObjectURL(revokeUrl)
+            }
+         }
+      }, [url, hideImg])
+
+      if (!url) return null
+      if (blobUrl) {
+         return (
+            <> <Div>ㅤㅤ</Div>
+               <img
+                  src={blobUrl}
+                  alt=""
+                  style={{ height: "16px", width: "16px", verticalAlign: "middle" }}
+               />
+            </>
+         )
+      }
+      if (!hideImg) {
+         return (
+            <img
+               src={url}
+               alt=""
+               style={{ height: "16px", width: "16px", verticalAlign: "middle" }}
+               onError={() => setHideImg(true)}
+            />
+         )
+      }
+      if (isText) {
+         const trimmed = text.length > 120 ? `${text.slice(0, 117)}...` : text
+         return (<>{trimmed}</>)
+      }
+      return null
+   }
+
+   RemoteContent.propTypes = { url: PropTypes.string }
+
+   const renderPre = (value) => {
+      if (value === undefined || value === null) return <Div>{value}</Div>
+      if (typeof value === "string" && value.startsWith("~")) {
+         const text = value.substring(1)
+         return <Div sx={blink2}>{text}</Div>
+      }
+      const url = extractUrlFromPre(value)
+      if (url) {
+         return <Div>{<RemoteContent url={url} />}</Div>
+      }
+      return <Div>{value}</Div>
+   }
 
    const blink = {
       padding: "3px",
@@ -62,6 +161,7 @@ export default function CardItem({ dto }) {
             <Table size="small" sx={{ borderCollapse: "collapse" }}>
                <TableBody>
                   {dto.links.map((row, rowIdx) => {
+                     const derivedRowKey = (row && (row.label || row.name1 || row.href1)) ? `${row.label || row.name1 || row.href1}-${rowIdx}` : `row-${rowIdx}`
                      // Check if row has any content
                      const hasContent = [1, 2, 3, 4].some(colNum => {
                         const nameKey = `name${colNum}`
@@ -70,11 +170,11 @@ export default function CardItem({ dto }) {
 
                      // If row is empty, render as empty div
                      if (!hasContent) {
-                        return <div key={rowIdx} style={{ height: "8px" }} />
+                        return <div key={`${derivedRowKey}-empty`} style={{ height: "8px" }} />
                      }
 
                      return (
-                        <TableRow key={rowIdx} sx={{ border: "none" }}>
+                        <TableRow key={derivedRowKey} sx={{ border: "none" }}>
                            {[1, 2, 3, 4].map((colNum) => {
                               const nameKey = `name${colNum}`
                               const hrefKey = `href${colNum}`
@@ -82,7 +182,7 @@ export default function CardItem({ dto }) {
                               const targetKey = `target${colNum}`
 
                               if (!itHas(row, nameKey) || !row[nameKey] || row[nameKey].trim() === "") {
-                                 return <TableCell key={colNum} sx={cellStyle}></TableCell>
+                                 return <TableCell key={colNum} sx={cellStyle} />
                               }
 
                               const isLink = itHas(row, hrefKey) && row[hrefKey]
@@ -125,7 +225,7 @@ export default function CardItem({ dto }) {
    const showCol = (pre, post, title, href, target, name) => {
       return (
          <>
-            <Div>{pre}</Div>
+            {renderPre(pre)}
             <Tooltip title={title ?? href} arrow>
                <Link sx={blink} href={href} target={target ?? "_blank"} >
                   {name}
@@ -138,7 +238,7 @@ export default function CardItem({ dto }) {
 
 
   return (
-    <Stack direction="row" alignItems="left" key={idx} sx={{ textAlign: "left",width: "100%",marginTop:"-1px" }}>
+     <Stack direction="row" alignItems="left" key={`row-${idx}-${o.label || o.name1 || o.href1 || ''}`} sx={{ textAlign: "left", width: "100%", marginTop: "-1px" }}>
       {itHas(o, "label") && o.label.startsWith("-" ) ? (
         <Divider sx={{ fontSize: "8.5pt", marginTop: "3px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}>
          ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</Divider>
@@ -147,16 +247,16 @@ export default function CardItem({ dto }) {
           {itHas(o, "name1") &&
             o.name1.startsWith("-") ? (
             <>
-            <Divider key={idx} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "3px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider>
+                          <Divider key={`div-top-${idx}`} sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "3px", height: "1px", backgroundColor: "#ccc" }}> ㅤㅤㅤㅤ</Divider>
             <Tooltip title={o.title1 ?? o.href1} >
-            <Link sx={{...blink, padding:"8px",lineHeight:"0.1"}} key={idx + "2"} href={o.href1} target={o.target1 ?? "_blank"} >
+                             <Link sx={{ ...blink, padding: "8px", lineHeight: "0.1" }} key={`lnk-${idx}-name1`} href={o.href1} target={o.target1 ?? "_blank"} >
                   ㅤ{o.name1.substring(1)}ㅤ
             </Link>
             </Tooltip>
 
             <Divider sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider></>) : (
             <>
-              {o.pre1!==undefined && o.pre1.startsWith("~") ? (<Div sx={blink2}>{ o.pre1.substring(1) }</Div>) : (<Div>{ o.pre1 }</Div>)}
+                          {renderPre(o.pre1, true)}
               <Tooltip title={o.title1 ?? o.href1} arrow>
               <Link sx={blink} href={o.href1} target={o.target1 ?? "_blank"} >
                 {o.name1}

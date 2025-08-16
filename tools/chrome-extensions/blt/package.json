@@ -1,11 +1,11 @@
 {
-"name": "Beyond Limited Thinking",
+"name": "bltcore",
   "private": true,
-"version": "0.0.5",
+"version": "0.0.6",
   "type": "module",
   "repository": {
     "type": "git",
-   "url": "https://github.com/bltcore-com/bltcore-com"
+      "url": "https://github.com/bltcore-com/bltcore"
   },
   "config": {
     "status": "https://codemarc.net/report.html"

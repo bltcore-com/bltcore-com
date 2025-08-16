@@ -19,6 +19,7 @@ import house from "./11-house.yaml"
 import cloud from "./12-cloud.yaml"
 // import services2 from "./13-services.yaml"
 import stream from "./14-stream.yaml"
+import project from "./15-project.yaml"
 
 
 export default function pdata(ls) {
@@ -31,7 +32,7 @@ export default function pdata(ls) {
       sdata.p5 = blank
       sdata.p6 = blank
       sdata.p7 = blank
-      sdata.p8 = blank
+      sdata.p = project
    } else {
       // alternate
       switch (ls.gd) {

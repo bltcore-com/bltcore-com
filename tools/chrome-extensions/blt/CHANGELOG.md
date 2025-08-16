@@ -1,6 +1,7 @@
 # bltcore
 
 Changes for version 0.0.6
+- spacing around icos
 - fixed self reference url bug
 
 Changes for version 0.0.5

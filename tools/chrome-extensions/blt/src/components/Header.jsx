@@ -72,7 +72,7 @@ export default function Header({ themeProps }) {
                   <Box sx={{ flexGrow: 1 }}>
                      <Button
                         color="inherit"
-                        href="/"
+                        href="/index.html"
                         target="_blank"
                         onClick={() => {
                            // ls.dm = !darkMode

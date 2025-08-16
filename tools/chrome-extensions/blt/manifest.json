@@ -3,10 +3,13 @@
    "name": "bltcore",
    "description": "bltcore",
    "homepage_url": "https://bltcore.com",
-   "version": "0.0.5",
+   "version": "0.0.6",
    "permissions": [
       "activeTab",
       "scripting"
+   ],
+   "host_permissions": [
+      "https://*.gstatic.com/*"
    ],
    "author": {
       "email": "marc@bltcore.com"
