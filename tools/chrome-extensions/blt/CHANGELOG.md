@@ -1,6 +1,10 @@
 # bltcore
 
+Changes for version 0.0.6
+- fixed self reference url bug
+
 Changes for version 0.0.5
+- new package manager, better file resoltions
 
 Changes for version 0.0.4
 - removed XMLHttpRequest (via axios) causing error uneeded
