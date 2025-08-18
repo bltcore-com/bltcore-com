@@ -112,7 +112,7 @@ export default function Header({ themeProps }) {
                               }
                            }}
                         >
-                           {name}
+                           Beyond Limited Thinking
                         </Button>
                      </Link>
                   </Box>

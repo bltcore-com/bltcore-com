@@ -1,7 +1,9 @@
 # bltcore
 
 Changes for version 0.0.6
-- spacing around icos
+- add new links for analysis
+- enhance existing links in genai
+- spacing around icons
 - fixed self reference url bug
 
 Changes for version 0.0.5

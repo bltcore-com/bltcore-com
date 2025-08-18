@@ -1,6 +1,6 @@
 {
 "name": "bltcore",
-  "private": true,
+"private": true,
 "version": "0.0.6",
   "type": "module",
   "repository": {
@@ -8,6 +8,7 @@
       "url": "https://github.com/bltcore-com/bltcore"
   },
   "config": {
+   "title": "Beyond Limited Thinking",
     "status": "https://codemarc.net/report.html"
   },
   "scripts": {
