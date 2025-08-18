@@ -4,40 +4,56 @@ href1: https://venturebeat.com/category/ai/
 href2: "*/settings"
 links:
   - pre1:  
-    name1: chatgpt
-    href1: https://chat.openai.com/
+
+    pre2: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://chat.openai.com/&size=10)
+    name2: chatgpt
+    href2: https://chat.openai.com/
+    post2:    
+
+    pre3: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://claude.ai/chats&size=10)
+    name3: claude
+    href3: https://claude.ai/chats
 
   - pre1:  
-    name1: claude
-    href1: https://claude.ai/chats
 
   - pre1:  
-    name1: gemini
-    href1: https://gemini.google.com/
 
+    pre2: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.perplexity.ai/&size=10)
+    name2: perplexity
+    post2:   
 
-  - pre1:  
-    name1: perplexity
-    title1: Perplexity AI Search
-
-  - pre1:  
-    name1: meta.ai
-    href1: https://www.meta.ai/
+    pre3: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gemini.google.com/&size=10)
+    href3: https://gemini.google.com/
+    name3: gemini
 
   - pre1:  
-    name1: x.ai
-    href1: https://x.ai/
-    title1: x.ai
 
   - pre1:  
+    pre2: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.meta.ai/&size=10)
+    name2: meta.ai
+    href2: https://www.meta.ai/
+    post2:    
+
+    pre3: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://x.ai/&size=10)
+    name3: x.ai
+    href3: https://x.ai/
+    title3: x.ai
+
   - pre1:  
 
+  - pre1:  
+    pre2: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://huggingface.co/&size=10)
+    name2: hugging face
+    href2: https://huggingface.co/
+    post2:  
+
+    pre3: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.midjourney.com/&size=10)
+    name3: midjourney
+    href3: https://www.midjourney.com/
+
+  - pre1:  
 
 skip:
-  - pre1:  
-    name1: hugging face
-    href1: https://huggingface.co/
-    title1: Hugging Face AI Community
 
 
   - name1: "-art/image"
@@ -46,9 +62,6 @@ skip:
     name1: dall-e
     href1: https://openai.com/dall-e-2
     title1: "OpenAI's DALL-E, generates highly realistic and creative images from text descriptions. Known for its versatility and ability to understand complex prompts. Offers editing features like inpainting and outpainting."
-    name2: midjourney
-    href2: https://www.midjourney.com/
-    title2: "Midjourney AI Art. Produces high-quality, artistic images from text prompts. Known for its distinctive aesthetic, often described as painterly or illustrative. Operates primarily through a Discord bot interface. Offers various style options and aspect ratios"
     name3: stable diffusion
     href3: https://stability.ai/
     title3: "Stability AI's Stable Diffusion, Open-source image generation model. Can run locally on consumer hardware, unlike many cloud-based alternatives. Highly customizable with a large community creating custom models and implementations. Capable of various tasks including text-to-image, image-to-image, and inpainting"

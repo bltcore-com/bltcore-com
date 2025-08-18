@@ -1,23 +1,14 @@
-// import blank   from "./blank.yaml"
-// import shopify from "./15-shopify.yaml"
-// import blank    from "./0-blank.yaml"
 import blank from "./0-notinuse.yaml"
 import comms from "./1-comms.yaml"
 import boot from "./1-boot.yaml"
-// import devtools from "./2-devtools.yaml"
 import services from "./2-services.yaml"
 import genai from "./3-genai.yaml"
 import aiqsol from "./4-aiqsol.yaml"
-// import devops from "./4-devops.yaml"
-// import msft from "./5-msft.yaml"
-// import amzn from "./6-amzn.yaml"
-// import goog from "./7-goog.yaml"
-// import apache from "./8-apache.yaml"
+import analysis from "./5-analysis.yaml"
 import fintech from "./9-fintech.yaml"
 import banking from "./10-banking.yaml"
 import house from "./11-house.yaml"
 import cloud from "./12-cloud.yaml"
-// import services2 from "./13-services.yaml"
 import stream from "./14-stream.yaml"
 import project from "./15-project.yaml"
 
@@ -29,7 +20,7 @@ export default function pdata(ls) {
       sdata.p2 = services
       sdata.p3 = genai
       sdata.p4 = aiqsol
-      sdata.p5 = blank
+      sdata.p5 = analysis
       sdata.p6 = blank
       sdata.p7 = blank
       sdata.p = project
@@ -53,7 +44,7 @@ export default function pdata(ls) {
             sdata.p2 = services
             sdata.p3 = genai
             sdata.p4 = aiqsol
-            sdata.p5 = blank
+            sdata.p5 = analysis
             sdata.p6 = blank
             sdata.p7 = blank
             sdata.p8 = blank
