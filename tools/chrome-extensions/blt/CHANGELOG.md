@@ -1,5 +1,9 @@
 # bltcore
 
+Changes for version 0.0.7
+- added support for links with tooltips
+- fixed missing and mislinks
+
 Changes for version 0.0.6
 - add new links for analysis
 - enhance existing links in genai

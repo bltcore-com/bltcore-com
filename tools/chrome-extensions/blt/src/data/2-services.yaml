@@ -17,6 +17,7 @@ links:
   - pre1:    
 
   - pre1: "~supabase"
+    href1: https://supabase.com/
 
   - pre1: "       pos:            "
     post1: "  |  "
@@ -27,21 +28,22 @@ links:
     name2: dev
     href2: https://supabase.com/dashboard/project/ovpmvfheekvipqipsogk
 
-  - pre1: ""
+  - pre1:   
 
   - pre1: "~lovable"
-
-  - pre1:    
-    name1: dashboard
     href1: https://lovable.dev/
+
+  - pre1:            
+    name1: website
+    href1: https://lovable.dev/projects/5e6387a8-b33f-402b-b594-41a36d0606d4
     post1:      
 
-    name2: website
-    href2: https://lovable.dev/projects/5e6387a8-b33f-402b-b594-41a36d0606d4
+    name2: pos
+    href2: https://lovable.dev/projects/ae760d9b-8212-4fc1-b94e-71d7bb59a6a0
     post2:      
 
-    name3: pos
-    href3: https://lovable.dev/projects/ae760d9b-8212-4fc1-b94e-71d7bb59a6a0
+    name3: ipos
+    href3: https://lovable.dev/projects/077a0bc3-9ecc-49c6-af28-d3eb7ab7db4d
 
   - pre1:    
   - pre1:    

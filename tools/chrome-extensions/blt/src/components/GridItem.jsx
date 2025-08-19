@@ -103,10 +103,20 @@ export default function CardItem({ dto }) {
 
    RemoteContent.propTypes = { url: PropTypes.string }
 
-   const renderPre = (value) => {
+   const renderPre = (value, href, title, target) => {
       if (value === undefined || value === null) return <Div>{value}</Div>
       if (typeof value === "string" && value.startsWith("~")) {
          const text = value.substring(1)
+         // If there's an associated href, make it clickable
+         if (href) {
+            return (
+               <Tooltip title={title ?? href} arrow>
+                  <Link sx={blink} href={href} target={target ?? "_blank"}>
+                     <Div sx={blink2}>{text}</Div>
+                  </Link>
+               </Tooltip>
+            )
+         }
          return <Div sx={blink2}>{text}</Div>
       }
       const url = extractUrlFromPre(value)
@@ -225,12 +235,14 @@ export default function CardItem({ dto }) {
    const showCol = (pre, post, title, href, target, name) => {
       return (
          <>
-            {renderPre(pre)}
-            <Tooltip title={title ?? href} arrow>
-               <Link sx={blink} href={href} target={target ?? "_blank"} >
-                  {name}
-               </Link>
-            </Tooltip>
+            {renderPre(pre, href, title, target)}
+            {name && (
+               <Tooltip title={title ?? href} arrow>
+                  <Link sx={blink} href={href} target={target ?? "_blank"} >
+                     {name}
+                  </Link>
+               </Tooltip>
+            )}
             <Div>{post}</Div>
          </>
       )
@@ -255,14 +267,16 @@ export default function CardItem({ dto }) {
             </Tooltip>
 
             <Divider sx={{ fontSize: "8.5pt", marginTop: "8px", marginBottom: "1px",height:"1px", backgroundColor:"#ccc" }}> ㅤㅤㅤㅤ</Divider></>) : (
-            <>
-                          {renderPre(o.pre1, true)}
-              <Tooltip title={o.title1 ?? o.href1} arrow>
-              <Link sx={blink} href={o.href1} target={o.target1 ?? "_blank"} >
-                {o.name1}
-              </Link>
-              </Tooltip>
-              <Div>{o.post1}</Div>
+                       <>
+                          {renderPre(o.pre1, o.href1, o.title1, o.target1)}
+                          {o.name1 && (
+                             <Tooltip title={o.title1 ?? o.href1} arrow>
+                                <Link sx={blink} href={o.href1} target={o.target1 ?? "_blank"} >
+                                   {o.name1}
+                                </Link>
+                             </Tooltip>
+                          )}
+                          <Div>{o.post1}</Div>
             </>
           )}
           {itHas(o, "name2") && showCol(o.pre2, o.post2, o.title2, o.href2, o.target2, o.name2)}
