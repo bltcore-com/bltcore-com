@@ -9,7 +9,6 @@
       "orta.vscode-jest",
       "humao.rest-client",
       "redhat.vscode-yaml",
-      "sourcegraph.cody-ai",
       "mhutchie.git-graph"
    ]
 }

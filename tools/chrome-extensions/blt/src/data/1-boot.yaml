@@ -11,7 +11,6 @@ links:
     name3: backpack
     href3: https://braintrailz.com/backpack
 
-  - pre1: ㅤ
 
   - pre1: ㅤㅤㅤ
     post1: ㅤ
@@ -30,22 +29,31 @@ links:
     href3: https://meet.google.com/
     title3: "Google Meet: Secure Video Meetings"
 
-
   - pre1: ㅤ
+
+  - pre1: ㅤㅤㅤㅤㅤ
+    name1: digital ocean
+    href1: https://cloud.digitalocean.com/login
 
   - pre1: ㅤ
   - name1: -legal
     href1: https://app.cindysfloridallc.com/v2/home/companies/205663/overview
 
-
-
   - pre1: ㅤ
+
+  - pre1: ㅤㅤㅤ
     name1: sba
     href1: https://www.sba.gov/business-guide/plan-your-business
 
+    pre2: ㅤㅤ
+    name2: nda
+    href2: https://github.com/codemarc/merge
+    title2: "Merge: NDA Template"
+
     pre3: ㅤ
-    name3: nda
-    href3: https://www.rocketlawyer.com/interview.rl/130276977?id=629&templateUuid=c7bc79b1-59dc-44d9-aa7a-3bdc86946d41&question=1m/
+    name3: godaddy
+    href3: https://www.godaddy.com/
+
 
 
   - pre1: ㅤ
@@ -68,3 +76,5 @@ skip:
 
     name4: hacker news
     href4: https://news.ycombinator.com
+
+  - pre1: ㅤ

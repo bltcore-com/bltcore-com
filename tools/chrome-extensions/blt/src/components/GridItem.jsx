@@ -10,6 +10,12 @@ const Div = styled('div')(({ theme }) => ({
   marginTop: "-1px",
    color: theme.palette.mode === "dark" ? "rgb(76,249,77)" : "#1b2051",
   fontSize: "8pt",
+   fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
+   fontWeight: 400,
+   letterSpacing: "0.01em",
+   textRendering: "optimizeLegibility",
+   WebkitFontSmoothing: "antialiased",
+   MozOsxFontSmoothing: "grayscale",
 }))
 
 CardItem.propTypes = {  dto: PropTypes.object  }
@@ -22,7 +28,21 @@ export default function CardItem({ dto }) {
       if (!value || typeof value !== "string") return null
       const trimmed = value.trim()
       const match = trimmed.match(/^\(\s*(https?:\/\/[^)]+?)\s*\)$/)
-      return match ? match[1] : null
+      if (!match) return null
+
+      let url = match[1]
+
+      // Standardize favicon URLs to request 16x16 icons
+      if (url.includes('faviconV2') || url.includes('favicon')) {
+         // Replace any existing size parameter with size=16
+         url = url.replace(/&size=\d+/, '&size=16')
+         // If no size parameter exists, add it
+         if (!url.includes('&size=')) {
+            url += '&size=16'
+         }
+      }
+
+      return url
    }
 
    // Heuristic removed; we optimistically render <img> and only fetch after an error
@@ -79,7 +99,7 @@ export default function CardItem({ dto }) {
                <img
                   src={blobUrl}
                   alt=""
-                  style={{ height: "16px", width: "16px", verticalAlign: "middle" }}
+                  className="grid-icon"
                />
             </>
          )
@@ -89,7 +109,7 @@ export default function CardItem({ dto }) {
             <img
                src={url}
                alt=""
-               style={{ height: "16px", width: "16px", verticalAlign: "middle" }}
+               className="grid-icon"
                onError={() => setHideImg(true)}
             />
          )
@@ -131,9 +151,13 @@ export default function CardItem({ dto }) {
       textDecoration: "none",
       textShadow: "none",
       textTransform: "none",
-      fontFamily: "mukta",
+      fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
       fontSize: "9pt",
-      fontWeight: 500,
+      fontWeight: 400,
+      letterSpacing: "0.01em",
+      textRendering: "optimizeLegibility",
+      WebkitFontSmoothing: "antialiased",
+      MozOsxFontSmoothing: "grayscale",
       color: theme.palette.mode === "dark" ? "white" : dto.basecolor,
       "&:hover": {
          color: theme.palette.mode === "dark" ? "rgb(76, 249, 77)" : "white",
@@ -143,8 +167,14 @@ export default function CardItem({ dto }) {
       }
    }
    const blink2 = {
-      color: theme.palette.mode === "dark" ? "rgb(76, 249, 77)1" : "green",
-      marginTop: "0px"
+      color: theme.palette.mode === "dark" ? "rgb(76, 249, 77)" : "green",
+      marginTop: "0px",
+      fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
+      fontWeight: 400,
+      letterSpacing: "0.01em",
+      textRendering: "optimizeLegibility",
+      WebkitFontSmoothing: "antialiased",
+      MozOsxFontSmoothing: "grayscale",
    }
 
    const renderTable = () => {
@@ -154,8 +184,12 @@ export default function CardItem({ dto }) {
 
       const tableStyle = {
          fontSize: "9pt",
-         fontFamily: "mukta",
-         fontWeight: 500,
+         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
+         fontWeight: 400,
+         letterSpacing: "0.01em",
+         textRendering: "optimizeLegibility",
+         WebkitFontSmoothing: "antialiased",
+         MozOsxFontSmoothing: "grayscale",
          color: theme.palette.mode === "dark" ? "white" : dto.basecolor,
       }
 

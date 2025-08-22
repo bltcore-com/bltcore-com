@@ -1,5 +1,10 @@
 # bltcore
 
+Changes for version 0.0.8
+- improve CSS for better font rendering and icon consistency
+- enhance styling in GridItem and GridCard components
+- removed expired link for rocket
+
 Changes for version 0.0.7
 - added support for links with tooltips
 - fixed missing and mislinks

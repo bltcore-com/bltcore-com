@@ -3,18 +3,12 @@ title: services
 href1: ""
 href2: "*/settings"
 links:
-  - name1: digital ocean
-    href1: https://cloud.digitalocean.com/login
-
-    pre2:  
-    name2: godaddy
-    href2: https://www.godaddy.com/
-
-    name3: formspree
-    href3: https://formspree.io/forms/xdkgygkq/overview
+  - pre1: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://formspree.io.com&size=12)
+    name1: formspree
+    href1: https://formspree.io/forms/xdkgygkq/overview
 
 
-  - pre1:    
+  - pre1:   
 
   - pre1: "~supabase"
     href1: https://supabase.com/
@@ -28,7 +22,7 @@ links:
     name2: dev
     href2: https://supabase.com/dashboard/project/ovpmvfheekvipqipsogk
 
-  - pre1:   
+  - pre1: ㅤ
 
   - pre1: "~lovable"
     href1: https://lovable.dev/
@@ -45,8 +39,4 @@ links:
     name3: ipos
     href3: https://lovable.dev/projects/077a0bc3-9ecc-49c6-af28-d3eb7ab7db4d
 
-  - pre1:    
-  - pre1:    
-  - pre1:    
-  - pre1:    
-  - pre1:    
+  - pre1:   
