@@ -52,6 +52,7 @@ const defaultSettings = {
       tw: "https://twitter.com",
       ig: "https://instagram.com",
       fb: "https://www.meta.ai/",
+      yt: "https://www.youtube.com/",
       ic: "https://icloud.com",
       gl: "https://drive.google.com/drive/u/0/folders/164qd8huQcm0U3NSuA31GtqiexsbdcR7v",
       ib: "https://outlook.office.com/mail/",

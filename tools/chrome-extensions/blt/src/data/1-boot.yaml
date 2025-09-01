@@ -31,15 +31,19 @@ links:
 
   - pre1: ㅤ
 
-  - pre1: ㅤㅤㅤㅤㅤ
+  - pre1: ㅤ
     name1: digital ocean
     href1: https://cloud.digitalocean.com/login
+
+    pre2: ㅤ
+    name2: google admin
+    href2: https://admin.google.com/?utm_source=app_launcher
 
   - pre1: ㅤ
   - name1: -legal
     href1: https://app.cindysfloridallc.com/v2/home/companies/205663/overview
 
-  - pre1: ㅤ
+
 
   - pre1: ㅤㅤㅤ
     name1: sba
@@ -54,10 +58,9 @@ links:
     name3: godaddy
     href3: https://www.godaddy.com/
 
-
-
   - pre1: ㅤ
   - pre1: ㅤ
+
 
 skip:
   - pre1:  

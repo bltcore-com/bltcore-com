@@ -19,12 +19,13 @@ export default function Settings({ themeProps }) {
    const lcolor = darkMode ? "rgb(76,249,77)" : "#1b2051"
 
 
-   const { gh, li, tw, ig, fb, ic, gl, ib, ca, go, ba, sm, ai, qo } = ls.header
+   const { gh, li, tw, ig, fb, yt, ic, gl, ib, ca, go, ba, sm, ai, qo } = ls.header
    const [githubUrl, setGithubUrl] = useState(gh ?? "")
    const [linkedinUrl, setLinkedinUrl] = useState(li ?? "")
    const [twitterUrl, setTwitterUrl] = useState(tw ?? "")
    const [instaUrl, setInstaUrl] = useState(ig ?? "")
    const [facebookUrl, setFacebookUrl] = useState(fb ?? "")
+   const [youtubeUrl, setYoutubeUrl] = useState(yt ?? "")
    const [icloudUrl, setIcloudUrl] = useState(ic ?? "")
    const [googleDriveUrl, setGoogleDriveUrl] = useState(gl ?? "")
    const [inboxUrl, setInboxUrl] = useState(ib ?? "")
@@ -45,6 +46,7 @@ export default function Settings({ themeProps }) {
       setTwitterUrl(tw)
       setInstaUrl(ig)
       setFacebookUrl(fb)
+      setYoutubeUrl(yt)
       setIcloudUrl(ic)
       setGoogleDriveUrl(gl)
       setBankUrl(ba)
@@ -55,7 +57,7 @@ export default function Settings({ themeProps }) {
       setBrokerUrl(sm)
       setChataiUrl(ai)
       setMotdUrl(qo)
-   }, [gh, li, tw, ig, fb, ic, gl, ib, ca, go, ba, sm, ai, qo])
+   }, [gh, li, tw, ig, fb, yt, ic, gl, ib, ca, go, ba, sm, ai, qo])
 
    const pagelink = "/settings"
    const navigate = useNavigate()
@@ -101,6 +103,7 @@ export default function Settings({ themeProps }) {
       ls.header.tw = twitterUrl
       ls.header.ig = instaUrl
       ls.header.fb = facebookUrl
+      ls.header.yt = youtubeUrl
       ls.header.ic = icloudUrl
       ls.header.gl = googleDriveUrl
       ls.header.ib = inboxUrl
@@ -131,6 +134,8 @@ export default function Settings({ themeProps }) {
       setInstaUrl: setInstaUrl ,
       facebookUrl: facebookUrl ,
       setFacebookUrl:setFacebookUrl,
+      youtubeUrl: youtubeUrl,
+      setYoutubeUrl: setYoutubeUrl,
       icloudUrl: icloudUrl,
       setIcloudUrl: setIcloudUrl,
       inboxUrl: inboxUrl,

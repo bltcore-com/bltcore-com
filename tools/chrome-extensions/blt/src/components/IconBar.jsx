@@ -33,6 +33,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import AppleIcon from "@mui/icons-material/Apple";
 import AddToDriveIcon from '@mui/icons-material/AddToDrive';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 // import InboxIcon from "@mui/icons-material/Inbox";
 // import EventIcon from "@mui/icons-material/Event";
 import AirplaneTicketIcon from "@mui/icons-material/AirplaneTicket";
@@ -119,6 +120,14 @@ export default function IconBar({ themeProps }) {
                sx={iconStyle}
             >
                <FacebookIcon />
+            </IconButton>
+            <IconButton
+               title={ls.header.yt || "https://www.youtube.com/"}
+               aria-label="youtube"
+               onClick={() => window.open(ls.header.yt || "https://www.youtube.com/")}
+               sx={iconStyle}
+            >
+               <YouTubeIcon />
             </IconButton>
             <IconButton
                title={ls.header.ic}
