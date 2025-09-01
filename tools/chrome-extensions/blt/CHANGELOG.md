@@ -1,5 +1,10 @@
 # bltcore
 
+Changes for version 0.0.9
+- updated codex and base44
+- added new/updated ai tools section
+- added youtube toolbar icon
+
 Changes for version 0.0.8
 - improve CSS for better font rendering and icon consistency
 - enhance styling in GridItem and GridCard components
