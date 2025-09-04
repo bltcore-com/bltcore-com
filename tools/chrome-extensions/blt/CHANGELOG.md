@@ -1,5 +1,8 @@
 # bltcore
 
+Changes for version 0.0.10
+ - added brink link
+
 Changes for version 0.0.9
 - updated codex and base44
 - added new/updated ai tools section
