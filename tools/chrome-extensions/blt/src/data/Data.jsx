@@ -5,6 +5,7 @@ import services from "./2-services.yaml"
 import genai from "./3-genai.yaml"
 import aiqsol from "./4-aiqsol.yaml"
 import analysis from "./5-analysis.yaml"
+import lovable from "./6-lovable.yaml"
 import newai from "./7-newai.yaml"
 import fintech from "./9-fintech.yaml"
 import banking from "./10-banking.yaml"
@@ -22,7 +23,7 @@ export default function pdata(ls) {
       sdata.p3 = genai
       sdata.p4 = aiqsol
       sdata.p5 = analysis
-      sdata.p6 = blank
+      sdata.p6 = lovable
       sdata.p7 = newai
       sdata.p = project
    } else {
@@ -46,7 +47,7 @@ export default function pdata(ls) {
             sdata.p3 = genai
             sdata.p4 = aiqsol
             sdata.p5 = analysis
-            sdata.p6 = blank
+            sdata.p6 = lovable
             sdata.p7 = newai
             sdata.p8 = blank
 

@@ -48,9 +48,9 @@ export default defineConfig({
   server: {
     port: 9999
   },
-   optimizeDeps: {
-      exclude: []
-   },
+   // optimizeDeps: {
+   //    exclude: []
+   // },
    /**
     * Configures the Vite build process to manually chunk the output based on the dependencies in the `node_modules` directory.
     * This ensures that vendor dependencies are separated into their own chunks, which can improve performance by allowing the browser to cache these dependencies.
