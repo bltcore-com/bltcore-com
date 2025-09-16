@@ -18,13 +18,15 @@ links:
 
   - pre1:  
 
-    pre2: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://https://base44.com/)
+    pre2: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://base44.com/)
     name2: base44
     href2: https://base44.com/
-    post2:    
+    post2:  
 
-
-  - pre1: ㅤ
+    pre3: (https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://developers.google.com/)
+    name3: dev@google
+    href3: https://developers.google.com/
+    post3:    
 
   - pre1: ㅤ
 
