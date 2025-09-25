@@ -54,7 +54,7 @@ const defaultSettings = {
       fb: "https://www.meta.ai/",
       yt: "https://www.youtube.com/",
       ic: "https://icloud.com",
-      gl: "https://drive.google.com/drive/u/0/folders/164qd8huQcm0U3NSuA31GtqiexsbdcR7v",
+      gl: "https://drive.google.com/drive/folders/0ANnLmU9Wsb5OUk9PVA",
       ib: "https://outlook.office.com/mail/",
       ca: "https://outlook.office.com/calendar/view/month",
       go: "https://www.google.com/travel/flights",
