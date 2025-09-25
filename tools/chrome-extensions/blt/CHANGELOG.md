@@ -1,7 +1,10 @@
 # bltcore
 
 Changes for version 0.0.10
- - added brink link
+- updated google drive loc
+- new lovable
+- new links for dolthub and 007
+- added brink link
 
 Changes for version 0.0.9
 - updated codex and base44
