@@ -1,7 +1,7 @@
 import blank from "./0-notinuse.yaml"
 import comms from "./1-comms.yaml"
 import boot from "./1-boot.yaml"
-import services from "./2-services.yaml"
+import toolchain from "./2-toolchain.yaml"
 import genai from "./3-genai.yaml"
 import aiqsol from "./4-aiqsol.yaml"
 import analysis from "./5-analysis.yaml"
@@ -19,7 +19,7 @@ export default function pdata(ls) {
    let sdata = {}
    if (!ls.gs) {
       sdata.p1 = boot
-      sdata.p2 = services
+      sdata.p2 = toolchain
       sdata.p3 = genai
       sdata.p4 = aiqsol
       sdata.p5 = analysis
@@ -37,13 +37,13 @@ export default function pdata(ls) {
             sdata.p4 = house
             sdata.p5 = genai
             sdata.p6 = cloud
-            sdata.p7 = services
+            sdata.p7 = toolchain
             sdata.p8 = stream
             break
 
          default:
             sdata.p1 = boot
-            sdata.p2 = services
+            sdata.p2 = toolchain
             sdata.p3 = genai
             sdata.p4 = aiqsol
             sdata.p5 = analysis

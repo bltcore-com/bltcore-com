@@ -1,0 +1,58 @@
+name: toolchain
+title: toolchain
+href1: "https://drive.google.com/file/d/1ybKGFkTsCKkKTVtpRFuBSWs2eFDdzPvN/view?usp=drive_link"
+href2: "*/settings"
+links:
+  - pre1: ㅤ
+    name1: react
+    href1: https://react.dev/
+    name2: vite
+    href2: https://vite.dev/
+    name3: typescript
+    href3: https://www.typescriptlang.org/
+    name4: lucide
+    href4: https://lucide.dev/
+
+  - pre1: ㅤㅤㅤ
+    name1: shadcn-ui
+    href1: https://ui.shadcn.com/
+    name2: tailwind css
+    href2: https://tailwindcss.com/
+
+  - pre1:   
+
+  - pre1: ㅤㅤ
+    name1: docker
+    href1: https://www.docker.com/
+    name2: nginx
+    href2: https://hub.docker.com/_/nginx
+    name3: primessl
+    href3: https://primessl.com
+    name4: orb
+    href4: https://orbstack.dev/
+
+  - pre1:                 
+    name1: supa-demo
+    href1: https://supabase.com/dashboard/project/dxanewewxwxsapiwxazt
+    name2: supa-dev
+    href2: https://supabase.com/dashboard/project/ovpmvfheekvipqipsogk
+
+  - pre1:   
+
+  - pre1:               
+    name1: lovable
+    href1: https://lovable.dev/
+    name2: cursor
+    href2: https://cursor.com/
+    name3: codex
+    href3: https://github.com/openai/codex
+
+  - pre1:     
+    name1: superwhisper
+    href1: https://superwhisper.com/
+    pre4:            
+    name4: formspree
+    href4: https://formspree.io/forms/xdkgygkq/overview
+
+
+

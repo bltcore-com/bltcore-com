@@ -1,5 +1,8 @@
 # bltcore
 
+Changes for version 0.0.11
+- add new toolchain section
+
 Changes for version 0.0.10
 - updated google drive loc
 - new lovable
@@ -12,7 +15,7 @@ Changes for version 0.0.9
 - added youtube toolbar icon
 
 Changes for version 0.0.8
-- improve CSS for better font rendering and icon consistency
+- improve CSS for better font rendering and icon consistencyw
 - enhance styling in GridItem and GridCard components
 - removed expired link for rocket
 
