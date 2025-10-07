@@ -1,5 +1,7 @@
 # bltcore
 
+Changes for version 0.0.12
+
 Changes for version 0.0.11
 - add new toolchain section
 
